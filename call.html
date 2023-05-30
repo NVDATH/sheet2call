@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+var phoneNum = location.href.substring(location.href.length-10,location.href.length);
+document.title = "call to "+phoneNum;
+window.location.href = 'tel:'+phoneNum;
+    
+function call2button() {
+        window.location = 'tel:'+phoneNum;
+    }
+
+	var c2b = document.createElement ('div');
+c2b.innerHTML = '<button id="cb" type="button">call to '+phoneNum+'</button>';
+document.body.appendChild(c2b);
+document.getElementById("cb").addEventListener (
+    "click", call2button, false
+);
+</script>
+</body>
+</html>
