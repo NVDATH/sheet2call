@@ -11,7 +11,7 @@ function call2button() {
     }
 
 	var c2b = document.createElement ('div');
-c2b.innerHTML = '<button id="cb" type="button">call to '+phoneNum+'</button>';
+c2b.innerHTML = '<button style="background-color: green; color: white; border: 1px solid black; padding: 20px 40px; text-align: center; margin: 0 auto; display: block; width: 200px; height: 50px; cursor: pointer;" id="cb" type="button">call to '+phoneNum+'</button>';
 document.body.appendChild(c2b);
 document.getElementById("cb").addEventListener (
     "click", call2button, false
